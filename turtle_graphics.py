@@ -11,6 +11,6 @@ for i in range(1000):
    tess.stamp()             # Leave an impression on the canvas
    size += 3   # Increase the size on every iteration
    tess.forward(size)       # Move tess along
-   tess.right(170)           #  ...  and turn her
+   tess.right(90)           #  ...  and turn her
 
 wn.mainloop()
