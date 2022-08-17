@@ -16,7 +16,7 @@ data = ["1", "John Doe", "36", "SomeFortune10000", "Johndoe@emaill.com"]
 id, name, age, company, email = data
 print(id, name, age, company, email)
 
-#Strings
+# Strings
 greet = "Hello"
 a, b, c, d, e = greet
 print(a, b, c, d, e)
@@ -31,7 +31,26 @@ print(point1, point2)
 
 """Unpacking elements from iterables of arbitrary length.  The python * expression is used to unpack multiple elements from a list"""
 
+
 def unpack_multiple_elements(iterable):
     *everything_else_here, the_last_element = iterable
     return everything_else_here
+
+
 print(unpack_multiple_elements(data))
+
+
+# def stupid_function(nothing=[]):
+#     for i in nothing:
+#         i**2
+#         nothing.append(i)
+#     return nothing
+
+nothing = [1, 2, 34, 43, 76, 98, 12, 32324, 53, 54, ]
+
+for i in nothing:
+    i**2
+    nothing.append(i)
+
+
+# print(stupid_function([1, 2, 34, 43, 76, 98, 12, 32324, 53, 54, ]))
